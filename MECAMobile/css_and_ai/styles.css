@@ -2,10 +2,16 @@
 /******************MOBILE FIRST******************/
 
 @media screen and (max-width:480px){
+    body{
+        width: 100%;
+        margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+    }
 	/******************CELL VIEW - About Page START*****************/
 	.aboutContent
 	{
-		width: 90%;
+		width: 100%;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -72,6 +78,7 @@
 	}
 	 .storiesContent 
 	 {
+        width: 100%;
 	 	margin-top: 100px;
 	 }
 	.storiesContent img
