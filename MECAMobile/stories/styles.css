@@ -1,5 +1,5 @@
 @CHARSET "ISO-8859-1";
-/******************MOBILE FIRST******************/
+
 /************************RESPONSIVE DESIGN******************************/
 
 @media (max-width: 1024px) {
@@ -83,20 +83,37 @@ body{
 }
 
 /****************** INDEX AKA STORIES ******************/
+.back-to-meca-button input
+{
+	min-height:50px;
+	color:red;
+	border-radius: 40px;
+	width: 25%;
+	min-width: 130px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+iframe
+{
+	width: 100%;
+}
+
 .storiesContent{
 	margin-top: 200px;
 	display: flex;
 	margin-left: 3%;
 }
 
-.firstRow, .secondRow, .thirdRow{
+.firstRow, .secondRow, .thirdRow
+{
 	width:90%;
 }
 
 
-.storiesContent img{
+.storiesContent img
+{
 	border-radius: 40px 1px 40px;
-	width: 100%;
 }
 
 figcaption{
@@ -128,8 +145,10 @@ figcaption{
 .storyPageContent img{
 	float:left;
 	width: 50%;
+	min-width: 250px;
 	border-radius: 40px 1px 40px;
 	margin-right: 5%;
+	
 }
 
 /* .backToStories{
