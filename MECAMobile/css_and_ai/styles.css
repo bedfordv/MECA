@@ -542,7 +542,7 @@
 	    position:fixed;
 	    top:0;
 	    width:100%;
-	    height: 70px;
+	    height: 125px;
 	    z-index:100;
 	}
 	
@@ -580,7 +580,7 @@
 	  margin-top:20px;
 	  display: block;
 	  position: relative;
-	  top: 30px;
+	  top: 45px;
 	  right: 58px;
 
 	  z-index: 1;
