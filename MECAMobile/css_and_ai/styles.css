@@ -798,10 +798,10 @@
 	{
 		width:47%;
 	}
-	.submissionBoard input 
+	.submissionBoard input
 	{
 		float:right;
-		width: 55%;
+		width: 54%;
 	}
 	.submissionBoard img 
 	{
@@ -811,13 +811,16 @@
 	}
 	.submissionBoard textarea
 	{
+	float: right;
+	margin-top: 0px;
 		margin-left:5.5%;
-		width: 55%;
+		width: 54%;
 		height: 260px;
 	}
 	.submitButton{
+		margin-top: 20px;
 		float: left;
-		width: 12%;
+		width: 14%;
 	}
 	
 	
