@@ -3,50 +3,37 @@
 <head>
 <meta charset="UTF-8">
 <title>MECA | Home</title>
+
+<link rel="stylesheet" type="text/css" href="css_and_ai/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="css_and_ai/styles.css">
 <link rel="stylesheet" type="text/css" href="css_and_ai/colorbox.css">
+<script src="bootstrap.min.js"></script>
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
-
-<!-- ICON FOR BROWSER TAG -->
-<link rel="apple-touch-icon" sizes="57x57"
-	href="pictures/browser_icon/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60"
-	href="pictures/browser_icon/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72"
-	href="pictures/browser_icon/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76"
-	href="pictures/browser_icon/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114"
-	href="pictures/browser_icon/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120"
-	href="pictures/browser_icon/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144"
-	href="pictures/browser_icon/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152"
-	href="pictures/browser_icon/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180"
-	href="pictures/browser_icon/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"
-	href="pictures/browser_icon/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32"
-	href="pictures/browser_icon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96"
-	href="pictures/browser_icon/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16"
-	href="pictures/browser_icon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16"
-	href="pictures/browser_icon/favicon-16x16.png">
-<link rel="manifest" href="/manifest.json">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage"
-	content="pictures/browser_icon/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
-
+	<!-- ICON FOR BROWSER TAG -->
+	<link rel="apple-touch-icon" sizes="57x57" href="pictures/browser_icon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="pictures/browser_icon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="pictures/browser_icon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="pictures/browser_icon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="pictures/browser_icon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="pictures/browser_icon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="pictures/browser_icon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="pictures/browser_icon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="pictures/browser_icon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="pictures/browser_icon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="pictures/browser_icon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="pictures/browser_icon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="pictures/browser_icon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="pictures/browser_icon/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="pictures/browser_icon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
 
 </head>
 <body>
+
 	<div class="mecaSameLineBurger">
 		<div class="headerPic">
 			<a href="index.html"> <img src="pictures/MecaLogo3.JPG" alt="Meca Logo" /></a>
@@ -63,9 +50,9 @@
 						<!-- MECA header picture was here -->
 						
 						<ul>
-							<li><a href="index.html"><b>Home</b></a></li>
-							<li><a href="about.html">About</a></li>
-							<li><a href="submissions.html">Submission Board</a></li>
+							<li><a href="index.html"><b>HOME</b></a></li>
+							<li><a href="about.html">ABOUT</a></li>
+							<li><a href="submissions.html">SUBMISSIONS</a></li>
 						</ul>
 					</div>
 				</ul>
@@ -74,85 +61,212 @@
 	</div>
 		
 		
-	<div class="storiesContent">
+<div class="storiesContent">
 
-		<div class="firstRow">
+		<script src="jquery-2.1.0.min.js"></script>
+		<script>
+	    	$(window).on('load, resize', function(){  
+				if ($(window).width()  <= 976) {
+					$( ".three" ).hide();
+					$( ".two" ).show();
+				} else {
+					$( ".two" ).hide();
+					$( ".three" ).show();
+				}
+	    	 });
+	    </script>
+	
+	<div class="three">
+		<div class="container">
 		
-			<figure>
-				<a class="gabby" href="stories/gabby.html">
-					<img class="mainPicture" src="stories/story_page_pics/Gabby.png" alt="Picture of Gabby Douglas">
-				</a>
-				<figcaption>Hard days are the best because that’s when champions are made. –Gabby Douglas </figcaption>
-			</figure>
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4"> 
+				<figure>
+					<a class="gabby" href="stories/gabby.html">
+						<img src="stories/desktop_images/Gabby.png" alt="Picture of Gabby Douglas">
+					</a>
+					<figcaption>Hard days are the best because that’s when champions are made. –Gabby Douglas </figcaption>
+				</figure>
+				</div>
+				
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4"> 
+				<figure>
+					<a class="blacksInWorkplace" href="stories/blackInTheWorkplace.html">
+						<img src="stories/desktop_images/blacks.png" alt="blacks In Workplace">
+					</a>
+					<figcaption>10 Moments Black People In The Workplace Know Too Well</figcaption>
+				</figure>
+				</div>
+				
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4"> 
+				<figure>
+					<a class="tokenism" href="stories/jobs.html">
+						<img src="stories/desktop_images/36 Jobs.png" alt="Tokenism">
+					</a>
+					<figcaption>Tokenism</figcaption>
+				</figure>
+				</div>
+			</div>
 			
-			<figure>
-				<a class="blacksInWorkplace" href="stories/blackInTheWorkplace.html">
-					<img class="smallerPicsNextToLarge" src="stories/story_page_pics/blacks.png" alt="blacks In Workplace">
-				</a>
-				<figcaption>10 Moments Black People In The Workplace Know Too Well</figcaption>
-			</figure>
-
-			<figure>
-				<a class="tokenism" href="stories/jobs.html">
-					<img class="smallerPicsNextToLarge" src="stories/story_page_pics/36 Jobs.png" alt="Tokenism">
-				</a>
-				<figcaption>Tokenism</figcaption>
-			</figure>
-
-		</div>
-
-		<div class="secondRow">
-
-			<figure>
-				<a class="raceTogether" href="stories/racetothetop.html">
-					<img class="smallerPicsNextToLarge" src="stories/story_page_pics/coffee race together.jpg" alt="Starbucks race together">
-				</a>
-				<figcaption>What do you think about Starbuck’s new movement to Race Together?</figcaption>
-			</figure>
-
-			<figure>
-				<a class="kfc" href="stories/jackmamotivation.html">
-					<img class="smallerPicsNextToLarge" src="stories/story_page_pics/kfc.png" alt="KFC">
-				</a>
-				<figcaption>Motivation: What is your KFC story?</figcaption>
-			</figure>
-
-			<figure>
-				<a class="roleModel" href="stories/rolemodel.html" >
-					<img class="smallerPicsNextToLarge" src="stories/story_page_pics/kids.png" alt="Kids">
-				</a>
-				<figcaption>They Actually Want to Be Like You.</figcaption>
-			</figure>
-		</div>
-
-
-		<div class="thirdRow">
-			<figure>
-				<a class="sxsw" href="stories/blackinsilicon.html">
-					<img class="smallerPicsNextToLarge" src="stories/story_page_pics/lady guy at computer.png" alt="Lady Guy At Computer">
-				</a>
-				<figcaption>SXSW: What It’s Like to Be Black in Silicon Valley</figcaption>
-			</figure>
-
-			<figure>
-				<a class="latinos" href="stories/latinosinworkplace.html">
-					<img class="smallerPicsNextToLarge" src="stories/story_page_pics/latinos.png" alt="Latino in the workplace">
-				</a>
-				<figcaption>What do you think we can do to counter stereotypes in our schools, workplaces and communities?</figcaption>
-			</figure>
-
-			<figure>
-				<a class="ursula" href="stories/ursula.html">
-					<img class="smallerPicsNextToLarge" src="stories/story_page_pics/ursula.png" alt="Ursula">
-				</a>
-				<figcaption>Meet Ursula Burns</figcaption>
-			</figure>
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4"> 
+				<figure>
+					<a class="raceTogether" href="stories/racetothetop.html">
+						<img src="stories/desktop_images/coffee race together.jpg" alt="Starbucks race together">
+					</a>
+					<figcaption>What do you think about Starbuck’s new movement to Race Together?</figcaption>
+				</figure>
+				</div>
+				
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4"> 
+				<figure>
+					<a class="kfc" href="stories/jackmamotivation.html">
+						<img src="stories/desktop_images/kfc.png" alt="KFC">
+					</a>
+					<figcaption>Motivation: What is your KFC story?</figcaption>
+				</figure>
+				</div>
+				
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4"> 
+				<figure>
+					<a class="roleModel" href="stories/rolemodel.html" >
+						<img src="stories/desktop_images/kids.png" alt="Kids">
+					</a>
+					<figcaption>They Actually Want to Be Like You.</figcaption>
+				</figure>
+				</div>
+			</div>
+	
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4"> 
+				<figure>
+					<a class="sxsw" href="stories/blackinsilicon.html">
+						<img src="stories/desktop_images/lady guy at computer.png" alt="Lady Guy At Computer">
+					</a>
+					<figcaption>SXSW: What It’s Like to Be Black in Silicon Valley</figcaption>
+				</figure>
+				</div>
+				
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4"> 
+				<figure>
+					<a class="latinos" href="stories/latinosinworkplace.html">
+						<img src="stories/desktop_images/latinos.png" alt="Latino in the workplace">
+					</a>
+					<figcaption>What do you think we can do to counter stereotypes in our schools, workplaces and communities?</figcaption>
+				</figure>
+				</div>
+				
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4"> 
+				<figure>
+					<a class="ursula" href="stories/ursula.html">
+						<img src="stories/desktop_images/ursula.png" alt="Ursula">
+					</a>
+					<figcaption>Meet Ursula Burns</figcaption>
+				</figure>
+				</div>
+			</div>
+			
+		<!-- container div END-->		
 		</div>
 	</div>
-
+	
+	<div class="two">
+		<div class="container">
+		
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4"> 
+				<figure>
+					<a class="gabby" href="stories/gabby.html">
+						<img src="stories/desktop_images/Gabby.png" alt="Picture of Gabby Douglas">
+					</a>
+					<figcaption>Hard days are the best because that’s when champions are made. –Gabby Douglas </figcaption>
+				</figure>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4"> 
+				<figure>
+					<a class="blacksInWorkplace" href="stories/blackInTheWorkplace.html">
+						<img src="stories/desktop_images/blacks.png" alt="blacks In Workplace">
+					</a>
+					<figcaption>10 Moments Black People In The Workplace Know Too Well</figcaption>
+				</figure>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4"> 
+				<figure>
+					<a class="tokenism" href="stories/jobs.html">
+						<img src="stories/desktop_images/36 Jobs.png" alt="Tokenism">
+					</a>
+					<figcaption>Tokenism</figcaption>
+				</figure>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4"> 
+				<figure>
+					<a class="raceTogether" href="stories/racetothetop.html">
+						<img src="stories/desktop_images/coffee race together.jpg" alt="Starbucks race together">
+					</a>
+					<figcaption>What do you think about Starbuck’s new movement to Race Together?</figcaption>
+				</figure>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4"> 
+				<figure>
+					<a class="kfc" href="stories/jackmamotivation.html">
+						<img src="stories/desktop_images/kfc.png" alt="KFC">
+					</a>
+					<figcaption>Motivation: What is your KFC story?</figcaption>
+				</figure>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4"> 
+				<figure>
+					<a class="roleModel" href="stories/rolemodel.html" >
+						<img src="stories/desktop_images/kids.png" alt="Kids">
+					</a>
+					<figcaption>They Actually Want to Be Like You.</figcaption>
+				</figure>
+				</div>
+			</div>
+	
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4"> 
+				<figure>
+					<a class="sxsw" href="stories/blackinsilicon.html">
+						<img src="stories/desktop_images/lady guy at computer.png" alt="Lady Guy At Computer">
+					</a>
+					<figcaption>SXSW: What It’s Like to Be Black in Silicon Valley</figcaption>
+				</figure>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4"> 
+				<figure>
+					<a class="latinos" href="stories/latinosinworkplace.html">
+						<img src="stories/desktop_images/latinos.png" alt="Latino in the workplace">
+					</a>
+					<figcaption>What do you think we can do to counter stereotypes in our schools, workplaces and communities?</figcaption>
+				</figure>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4"> 
+				<figure>
+					<a class="ursula" href="stories/ursula.html">
+						<img src="stories/desktop_images/ursula.png" alt="Ursula">
+					</a>
+					<figcaption>Meet Ursula Burns</figcaption>
+				</figure>
+				</div>
+			</div>
+			
+		<!-- container div END-->		
+		</div>
+	</div>
+	
+</div>
 
 	<!----------------------------------- COLOR-BOX to make stories pop up when clicked ----------------------------------->
-	<script src="jquery.min.js"></script>
 	<script src="jquery.colorbox-min.js"></script>
 	<script>
 			$(document).ready(function() {

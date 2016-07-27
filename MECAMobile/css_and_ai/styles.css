@@ -1,804 +1,319 @@
 @CHARSET "ISO-8859-1";
-/******************MOBILE FIRST******************/
 
-@media screen and (max-width:480px){
-	body
-	{
-		width: 100%;
-	}
-	/******************CELL VIEW - About Page START*****************/
-	.aboutContent
-	{
-		width: 90%;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	.wrapAbout img, .meetTheCreators img
-	{
-		width: 100%;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	/******************CELL VIEW - About Page END*****************/
-	/******************CELL VIEW - Submission START******************/
-	.submit{
-		width: 95%;
-		margin-left: auto;
-		margin-right:auto;
-	}
-	.submissionBoard form
-	{
-		margin-left:5%;
-	}
-	.submissionBoard input 
-	{
-		float:right;
-		width: 80%;
-	}
-	.submissionBoard img 
-	{
-		margin-top: 70px;
-		width: 80%;
-		margin-left: auto;
-		margin-right:auto;
-		
-	}
-	.submissionBoard textarea
-	{
-		width: 100%;
-		height: 260px;
-	}
-	/******************CELL VIEW - Submission END******************/
-	/******************CELL VIEW - Navigation - START******************/
-	.mecaSameLineBurger
-	{
-		display: inline;
-		background-color: white;
-	    position:fixed;
-	    top:0;
-	    width:100%;
-	    height: 70px;
-	    z-index:100;
-	}
-	
-	.headerPic
-	{
-		position:fixed;
-		float: left;
-		z-index:5;
-		margin-top: 26px;
-		margin-left: 40px;
-		
-	}
-	.headerPic img
-	{
-		height: 30px;
-	}
-	
-	a
-	{
-	  text-decoration: none;
-	  color: red;
-	  
-	  transition: color 0.3s ease;
-	}
-	
-	a:hover
-	{
-	  color: red;
-	}
-	
-	#menuToggle
-	{
-	  float:right;
-	  margin-top:20px;
-	  display: block;
-	  position: relative;
-	  top: 10px;
-	  right: 58px;
+/**********************************MENU START*****************************************/
+.mecaSameLineBurger
+{
+	display: inline;
+	background-color: white;
+    position:fixed;
+    top:0;
+    width:100%;
+    height: 70px;
+    z-index:100;
+}
 
-	  z-index: 1;
-	  
-	  -webkit-user-select: none;
-	  user-select: none;
-	}
-	#menuToggle input
-	{
-	  display: block;
-	  width: 40px;
-	  height: 32px;
-	  position: absolute;
-	  top: -7px;
-	  left: -5px;
-	  cursor: pointer;
-	  opacity: 0; /* hide this */
-	  z-index: 2; /* and place it over the hamburger */
-	  
-	  -webkit-touch-callout: none;
-	}
-	
-	/*
-	 * Just a quick hamburger
-	 */
-	#menuToggle span
-	{
-	  display: block;
-	  width: 33px;
-	  height: 4px;
-	  margin-bottom: 5px;
-	  position: relative;
-	  background: red;
-	  border-radius: 3px;
-	  z-index: 1;
-	  transform-origin: 4px 0px;
-	  
-	  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-	              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-	              opacity 0.55s ease;
-	}
-	#menuToggle span:first-child
-	{
-	  transform-origin: 0% 0%;
-	}
-	
-	#menuToggle span:nth-last-child(2)
-	{
-	  transform-origin: 0% 100%;
-	}
-	
-	/* 
-	 * Transform all the slices of hamburger
-	 * into a crossmark.
-	 */
-	#menuToggle input:checked ~ span
-	{
-	  opacity: 1;
-	  transform: rotate(45deg) translate(-2px, -1px);
-	  background: red;
-	}
-	
-	/*
-	 * But let's hide the middle one.
-	 */
-	#menuToggle input:checked ~ span:nth-last-child(3)
-	{
-	  opacity: 0;
-	  transform: rotate(0deg) scale(0.2, 0.2);
-	}
-	
-	/*
-	 * Ohyeah and the last one should go the other direction
-	 */
-	#menuToggle input:checked ~ span:nth-last-child(2)
-	{
-	  opacity: 1;
-	  transform: rotate(-45deg) translate(0, -1px);
-	}
-	
-	/*
-	 * Make this absolute positioned
-	 * at the top right of the screen
-	 */
-	#menu
-	{
-	  position: absolute;
-	  width: 300px;
-	  margin: -100px 0 0 -265px;
-	  padding: 50px;
-	  padding-top: 125px;
-	  
-	  opacity: 0.8;
-	  background: white;
-	  list-style-type: none;
-	  -webkit-font-smoothing: antialiased;
-	  /* to stop flickering of text in safari */
-	  
-	  transform-origin: 0% 0%;
-	  transform: translate(100%, 0);
-	  
-	  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-	}
-	
-	#menu li
-	{
-	  list-style:none;
-	  padding: 10px 0;
-	  margin-left: -12px;
-	  font-size: 18px;
-	}
-	
-	/*
-	 * And let's fade it in from the left
-	 */
-	#menuToggle input:checked ~ ul
-	{
-	  transform: scale(1.0, 1.0);
-	  opacity: 0.9;
-	}
-	
-	
-	/******************CELL VIEW - Navigation - END******************/
-	/******************CELL VIEW - Stories START******************/
-	 .storiesContent 
-	 {
-	 	margin-top: 100px;
-	 	width:100%;
-	 	margin-left: -150;
-	 	margin-right: auto;
-	 }
-	.storiesContent img
-	{
-	 	width:100%;
-	 	display: block;
-	}
-	
-	.storiesContent img
-	{
-		border-radius: 40px 1px 40px;
-		width: 100%;
-		height: 200px;
-	}
-	/******************CELL VIEW - Stories  END******************/
-	figure
-	{
-		margin-bottom: 40px;
-	}
-	
+.headerPic
+{
+	position:fixed;
+	float: left;
+	z-index:5;
+	margin-top: 26px;
+	margin-left: 40px;
 	
 }
-/******************TABLET VIEW - Refactor repetitive code******************/
-@media screen and (min-width:481px) and (max-width:953px){
-	/******************TABLET VIEW - About Page START*****************/
-	.aboutContent
-	{
-		width: 90%;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	.wrapAbout img, .meetTheCreators img
-	{
-		width: 100%;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	/******************TABLET VIEW - About Page END*****************/
-	/******************TABLET VIEW - Submission START******************/
-	.submit{
-		width: 95%;
-		margin-left: auto;
-		margin-right:auto;
-	}
-	.submissionBoard form
-	{
-		margin-left:5%;
-	}
-	.submitButton{
-		width: 100%;
-	}
-	.submissionBoard input
-	{
-		float:right;
-		width: 80%;
-	}
-	.submissionBoard img 
-	{
-		width: 80%;
-		margin-left: auto;
-		margin-right:auto;
-		
-	}
-	.submissionBoard textarea
-	{
-		width: 100%;
-		height: 260px;
-	}
-	
-	/******************TABLET VIEW - Submission END******************/
-	.mecaSameLineBurger
-	{
-		display: inline;
-		background-color: white;
-	    position:fixed;
-	    top:0;
-	    width:100%;
-	    height: 70px;
-	    z-index:100;
-	}
-	
-	.headerPic
-	{
-		position:fixed;
-		float: left;
-		z-index:5;
-		margin-top: 26px;
-		margin-left: 40px;
-		
-	}
-	.headerPic img
-	{
-		height: 30px;
-	}
-	 .storiesContent 
-	 {
-	 	margin-top: 100px;
-	 }
-	
-	.storiesContent img
-	{
-		border-radius: 40px 1px 40px;
-		width: 100%;
-		height: 200px;
-	}
-	
-	figure
-	{
-		margin-bottom: 40px;
-		width: 60%;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	
-	a
-	{
-	  text-decoration: none;
-	  color: red;
-	  
-	  transition: color 0.3s ease;
-	}
-	
-	a:hover
-	{
-	  color: red;
-	}
-	
-	#menuToggle
-	{
-	  float:right;
-	  margin-top:20px;
-	  display: block;
-	  position: relative;
-	  top: 10px;
-	  right: 58px;
-
-	  z-index: 1;
-	  
-	  -webkit-user-select: none;
-	  user-select: none;
-	}
-	#menuToggle input
-	{
-	  display: block;
-	  width: 40px;
-	  height: 32px;
-	  position: absolute;
-	  top: -7px;
-	  left: -5px;
-	  cursor: pointer;
-	  opacity: 0; /* hide this */
-	  z-index: 2; /* and place it over the hamburger */
-	  
-	  -webkit-touch-callout: none;
-	}
-	
-	/*
-	 * Just a quick hamburger
-	 */
-	#menuToggle span
-	{
-	  display: block;
-	  width: 33px;
-	  height: 4px;
-	  margin-bottom: 5px;
-	  position: relative;
-	  background: red;
-	  border-radius: 3px;
-	  z-index: 1;
-	  transform-origin: 4px 0px;
-	  
-	  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-	              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-	              opacity 0.55s ease;
-	}
-	#menuToggle span:first-child
-	{
-	  transform-origin: 0% 0%;
-	}
-	
-	#menuToggle span:nth-last-child(2)
-	{
-	  transform-origin: 0% 100%;
-	}
-	
-	/* 
-	 * Transform all the slices of hamburger
-	 * into a crossmark.
-	 */
-	#menuToggle input:checked ~ span
-	{
-	  opacity: 1;
-	  transform: rotate(45deg) translate(-2px, -1px);
-	  background: red;
-	}
-	
-	/*
-	 * But let's hide the middle one.
-	 */
-	#menuToggle input:checked ~ span:nth-last-child(3)
-	{
-	  opacity: 0;
-	  transform: rotate(0deg) scale(0.2, 0.2);
-	}
-	
-	/*
-	 * Ohyeah and the last one should go the other direction
-	 */
-	#menuToggle input:checked ~ span:nth-last-child(2)
-	{
-	  opacity: 1;
-	  transform: rotate(-45deg) translate(0, -1px);
-	}
-	
-	/*
-	 * Make this absolute positioned
-	 * at the top right of the screen
-	 */
-	#menu
-	{
-	  position: absolute;
-	  width: 300px;
-	  margin: -100px 0 0 -265px;
-	  padding: 50px;
-	  padding-top: 125px;
-	  
-	  opacity: 0.8;
-	  background: white;
-	  list-style-type: none;
-	  -webkit-font-smoothing: antialiased;
-	  /* to stop flickering of text in safari */
-	  
-	  transform-origin: 0% 0%;
-	  transform: translate(100%, 0);
-	  
-	  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-	}
-	
-	#menu li
-	{
-	  list-style:none;
-	  padding: 10px 0;
-	  margin-left: -12px;
-	  font-size: 18px;
-	}
-	
-	/*
-	 * And let's fade it in from the left
-	 */
-	#menuToggle input:checked ~ ul
-	{
-	  transform: scale(1.0, 1.0);
-	  opacity: 0.9;
-	}
-	.storyPageContent
-	{
-		width:90%;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	
-	.storyPageContent img
-	{
-		float:left; 
-		width: 50%;
-		border-radius: 40px 1px 40px;
-		margin-right: 5%;
-	} 
-	
-	.storyPageContent iframe
-	{
-		width:98%;
-		height: 200px;
-		margin-left: auto;
-		margin-right: auto;
-	}
+.headerPic img
+{
+	height: 30px;
 }
-/******************DESKTOP VIEW******************/
-/******************TEMPLATE******************/
-/******************NAVIGATION******************/
-@media screen and (min-width:954px){
 
-	
-	/**************Responsive design begin********/
-	#menuToggle input
-	{
-		display:none;
-	}
-	
-	.headerPic
-	{
-		z-index: 100;
-		position:fixed;
-		bottom: 85%;
-		margin-left: 30px;
-	}
-	/**************Responsive design end********/
-	
-	body
-	{
-		width: 95%;
-	}
-	
-	/******************DESKTOP - Menu START******************/
-	
-	.nav img
-	{
-		
-		float:left;
-		width: 19%;
-	}
-	.mecaSameLineBurger
-	{
-		display: inline;
-		background-color: white;
-	    position:fixed;
-	    top:0;
-	    width:100%;
-	    height: 92px;
-	    z-index:100;
-	}
-	
-	.headerPic
-	{
-		position:fixed;
-		float: left;
-		z-index:5;
-		margin-top: 26px;
-		margin-left: 60px;
-		
-	}
-	.headerPic img
-	{
-		height: 50px;
-	}
-	
-	a
-	{
-	  text-decoration: none;
-	  color: red;
-	  
-	  transition: color 0.3s ease;
-	}
-	
-	a:hover
-	{
-	  color: red;
-	}
-	
-	
-	#menuToggle
-	{
-	  float:right;
-	  margin-top:20px;
-	  display: block;
-	  position: relative;
-	  top: 45px;
-	  right: 65px;
+a
+{
+  text-decoration: none;
+  color: red;
+  font-size: medium;
+  transition: color 0.3s ease;
+}
 
-	  z-index: 1;
-	  
-	  -webkit-user-select: none;
-	  user-select: none;
-	}
-	#menuToggle input
-	{
-	  display: block;
-	  width: 40px;
-	  height: 32px;
-	  position: absolute;
-	  top: -7px;
-	  left: -5px;
-	  cursor: pointer;
-	  opacity: 0; /* hide this */
-	  z-index: 2; /* and place it over the hamburger */
-	  
-	  -webkit-touch-callout: none;
-	}
-	
-	/*
-	 * Just a quick hamburger
-	 */
-	#menuToggle span
-	{
-	  display: block;
-	  width: 33px;
-	  height: 4px;
-	  margin-bottom: 5px;
-	  position: relative;
-	  background: red;
-	  border-radius: 3px;
-	  z-index: 1;
-	  transform-origin: 4px 0px;
-	  
-	  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-	              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-	              opacity 0.55s ease;
-	}
-	#menuToggle span:first-child
-	{
-	  transform-origin: 0% 0%;
-	}
-	
-	#menuToggle span:nth-last-child(2)
-	{
-	  transform-origin: 0% 100%;
-	}
-	
-	/* 
-	 * Transform all the slices of hamburger
-	 * into a crossmark.
-	 */
-	#menuToggle input:checked ~ span
-	{
-	  opacity: 1;
-	  transform: rotate(45deg) translate(-2px, -1px);
-	  background: red;
-	}
-	
-	/*
-	 * But let's hide the middle one.
-	 */
-	#menuToggle input:checked ~ span:nth-last-child(3)
-	{
-	  opacity: 0;
-	  transform: rotate(0deg) scale(0.2, 0.2);
-	}
-	
-	/*
-	 * Ohyeah and the last one should go the other direction
-	 */
-	#menuToggle input:checked ~ span:nth-last-child(2)
-	{
-	  opacity: 1;
-	  transform: rotate(-45deg) translate(0, -1px);
-	}
-	
-	/*
-	 * Make this absolute positioned
-	 * at the top right of the screen
-	 */
-	#menu
-	{
-	  position: absolute;
-	  width: 300px;
-	  margin: -100px 0 0 -265px;
-	  padding: 50px;
-	  padding-top: 125px;
-	  
-	 
-	  background: white;
-	  opacity: 0.8;
-	  list-style-type: none;
-	  -webkit-font-smoothing: antialiased;
-	  /* to stop flickering of text in safari */
-	  
-	  transform-origin: 0% 0%;
-	  transform: translate(100%, 0);
-	  
-	  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-	}
-	
-	#menu li
-	{
-	  list-style:none;
-	  padding: 10px 0;
-	  margin-left: -12px;
-	  font-size: 18px;
-	}
-	
-	/*
-	 * And let's fade it in from the left
-	 */
-	#menuToggle input:checked ~ ul
-	{
-	  transform: scale(1.0, 1.0);
-	  opacity: 0.9;
-	}
-	/******************DESKTOP - Menu END ******************/
+a:hover
+{
+  color: red;
+}
 
-/****************** INDEX AKA STORIES ******************/
+#menuToggle
+{
+  float:right;
+  margin-top:20px;
+  display: block;
+  position: relative;
+  top: 10px;
+  right: 58px;
+
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: red;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: red;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  opacity: 1;
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top right of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -210px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  opacity: 0.8;
+  background: white;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  list-style:none;
+  padding: 10px 0;
+  margin-left: -12px;
+  font-size: 18px;
+}
+
+/*
+ * And let's fade it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: scale(1.0, 1.0);
+  opacity: 0.9;
+}
+	
+/**********************************MENU END*****************************************/
+/**********************************STORY CONTENT START*****************************************/
+.storiesContent
+{
+	margin-top: 100px;
+}
+
+.storiesContent img
+{
+	border-radius: 40px 1px 40px;
+	width: 100%;
+	height: 200px;
+}
+
+figcaption
+{
+	margin-bottom: 20px;
+}
+/**********************************STORY CONTENT END*****************************************/
+/**********************************STORY INDIVIDUAL CONTENT START*****************************************/
+.storyPageContent
+{
+	width:90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.storyPageContent img
+{
+	float:left; 
+	width: 50%;
+	border-radius: 40px 1px 40px;
+	margin-right: 5%;
+} 
+/**********************************STORY INDIVIDUAL CONTENT END*****************************************/
+/**********************************ABOUT START*****************************************/
+.aboutContent h4 
+{
+	width: 30%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.wrapAbout
+{
+	margin-top: 125px;
+}
+.wrapAbout img
+{
+	width: 100%;
+	float: right;
+	margin-right:1px;
+}
+
+.wrapAbout p
+{
+	width:100%;
+}
+.meetTheCreators
+{
+	margin-top: 100px;
+}
+.meetTheCreators img
+{
+ 	width:100%;
+}
+
+/**********************************ABOUT END*****************************************/
+/**********************************WORDS FONT & SIZE START*****************************************/
+p, figcaption, li
+{
+	font-size: 16px;
+ 	font-family: "Times New Roman", Times, serif;
+ 	color: black;
+ 	line-height: 20px;
+}
+h1
+{
+	font-family: "Times New Roman", Times, serif;
+ 	color: black;
+}
+/**********************************WORDS FONT & SIZE END*****************************************/
+/**********************************SUBMISSION FONT & SIZE START*****************************************/
+	.submit{
+	width: 95%;
+	margin-left: auto;
+	margin-right:auto;
+}
+.submissionBoard input 
+{
+	float:right;
+	width: 80%;
+}
+.submissionBoard img 
+{
+	margin-top: 70px; 
+	width: 80%;
+	margin-left: auto;
+	margin-right:auto;
+	
+}
+.submissionBoard textarea
+{
+	width: 100%;
+	height: 150px;
+}
+.submitButton
+{
+	margin-right: 10%;
+	width: 100%;
+	color: red;
+}
+/**********************************SUBMISSION FONT & SIZE END*****************************************/
+
+/************************************************************************************************/
+/***************************SMALL RESPONSIVE BASED ON BOOTSTRAP***********************************/
+/************************************************************************************************/
+@media screen and (min-width:544px){
 	.storiesContent
 	{
-		margin-top: 150px;
-		display: flex;
-		margin-left: 3%;
-	}
-	
-	.firstRow, .secondRow, .thirdRow
-	{
-		width:90%;
-	}
-	
-	
-	.storiesContent img
-	{
-		border-radius: 40px 1px 40px;
-		width: 100%;
-	}
-	
-	.mainPicture 
-	{
-		height: 500px;
-	}
-	.smallerPicsNextToLarge
-	{
-		height: 225px;
-		float:left;
-	}
-	/****************** INDEX AKA STORIES | Colorbox for how  ******************/
-	
-	.storyPageContent
-	{
-		width:90%;
+		width:50%;
 		margin-left: auto;
 		margin-right: auto;
 	}
-	
-	.storyPageContent img
-	{
-		float:left; 
-		width: 50%;
-		border-radius: 40px 1px 40px;
-		margin-right: 5%;
-	} 
-	
-	
-	/* .backToStories{
-		float:left;
-		color:red;
-		text-decoration:none;
-	} */
-	/****************** ABOUT & Meet The Creators ******************/
-	
-	.meetTheCreators img
-	{
-		width:100%;
-	}
-	
-	.meetTheCreators h4
-	{
-		margin-top: 155px;
-		margin-left:43%;
-	}
-	
-	.Valenta 
-	{
-		width:47%;
-		float: right;
-		margin-left: 30px;
-	}
-	
-	.Jadel 
-	{
-		width: 47%;
-		float: left;
-	}
-	/******************ABOUT / SUBMISSIONS******************/
-	.submissionBoard form, .aboutContent 
-	{
-		margin-top: 200px;
-		margin-left:5%;
-	}
+	/*********about************/
 	.wrapAbout img
 	{
-		width: 47%;
+		width: 48%;
 		float: right;
 		margin-right:1px;
 	}
 	
 	.wrapAbout p
 	{
-		width:47%;
+		width: 100%;
 	}
-	.submissionBoard input
+	.meetTheCreators img
+	{
+	 	width:47%;
+	 	float: right;
+	}
+	
+	/*********submissions************/
+	.submit
+	{
+		margin-top: 150px;
+	}
+		.submissionBoard input
 	{
 		float:right;
 		width: 54%;
@@ -811,40 +326,55 @@
 	}
 	.submissionBoard textarea
 	{
-	float: right;
-	margin-top: 0px;
+		float: right;
+		margin-top: 0px;
 		margin-left:5.5%;
 		width: 54%;
 		height: 260px;
 	}
 	.submitButton{
-		margin-top: 20px;
-		float: left;
-		width: 14%;
+		margin-right: 37%;
+		width: 100%;
+		color: red;	
 	}
-	
-	
-	/****************** INDEX-NO-LONGER_USED ******************/
-	
-	.indexContent
+}
+/************************************************************************************************/
+/***************************MEDIUM RESPONSIVE BASED ON BOOTSTRAP***********************************/
+/************************************************************************************************/
+@media screen and (min-width:768px){
+	.storiesContent
 	{
-		position:fixed;
-		left: 50%;
-		bottom: 1%;
+		width:100%;
+		margin-left: auto;
+		margin-right: auto;
 	}
-	
-	.signInContent
+	.aboutContent h4 
 	{
-		position:fixed;
-		left: 40%;
+		width: 25%;
+		margin-left: auto;
+		margin-right: auto;
 	}
-	.with
+	.meetTheCreators img
 	{
-		color:gray;
+	 	width:100%;
 	}
-	
-	.borderForExploreMECA
+
+}
+/************************************************************************************************/
+/***************************LARGE RESPONSIVE BASED ON BOOTSTRAP***********************************/
+/************************************************************************************************/
+@media screen and (min-width:992px){
+	.submissionBoard img 
 	{
-		border: 1px solid red;
+		margin-top: 40px;
 	}
+	.wrapAbout p
+	{
+		width: 100%;
+	}
+}
+/************************************************************************************************/
+/***************************EXTRA LARGE RESPONSIVE BASED ON BOOTSTR********************************/
+/************************************************************************************************/
+@media screen and (min-width:1200px){
 }
